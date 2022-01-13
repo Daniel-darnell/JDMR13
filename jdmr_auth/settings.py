@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'jdmr_auth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'auth',
-        'USER': 'django_auth',
+        'NAME': 'jdmr_auth',
+        'USER': 'django_jdmr_auth',
         'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '',
@@ -130,3 +130,5 @@ REST_FRAMEWORK = {
     'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
   ),
 }
+
+AUTH_USER_MODEL = 'users.User'

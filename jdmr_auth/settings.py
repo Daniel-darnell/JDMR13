@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'jdmr_auth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Auth',
+        'NAME': 'auth',
         'USER': 'django_auth',
         'PASSWORD': '1234',
         'HOST': 'localhost',

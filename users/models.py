@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 import email
-from django.db import models
+from django.db import models, transaction
 from django.utils import timezone
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 
